@@ -1,0 +1,134 @@
+/**
+ * 现代化 CSS Reset
+ * 基于 Josh Comeau's Custom CSS Reset
+ */
+
+/* 1. 使用更直观的盒模型 */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. 移除默认边距和内边距 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. 改善媒体元素的默认行为 */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 4. 移除表单元素的默认字体样式 */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 5. 避免文本溢出 */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 6. 改善行高 */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 7. 移除列表样式 */
+ul, ol {
+  list-style: none;
+}
+
+/* 8. 移除链接默认样式 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 9. 移除按钮默认样式 */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* 10. 改善表格样式 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 11. 移除 input 和 textarea 的默认外观 */
+input, textarea {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* 12. 移除 number input 的箭头 */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* 13. 改善 hr 样式 */
+hr {
+  border: none;
+  border-top: 1px solid var(--color-border-light);
+  margin: var(--spacing-lg) 0;
+}
+
+/* 14. 改善 code 和 pre 样式 */
+code, pre {
+  font-family: var(--font-mono);
+}
+
+/* 15. 改善选中文本的样式 */
+::selection {
+  background-color: var(--color-primary-alpha);
+  color: var(--color-text-primary);
+}
+
+::-moz-selection {
+  background-color: var(--color-primary-alpha);
+  color: var(--color-text-primary);
+}
+
+/* 16. 改善滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-dark);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
+
+/* 17. 改善 focus 样式 */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* 18. 禁用 iOS 的点击高亮 */
+* {
+  -webkit-tap-highlight-color: transparent;
+}

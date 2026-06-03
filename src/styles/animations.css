@@ -1,0 +1,41 @@
+/**
+ * 特殊动画效果
+ * 用于页面过渡、加载状态等
+ */
+
+/* ========== 页面过渡动画 ========== */
+.page-enter-active,
+.page-leave-active {
+  transition: all var(--transition-base);
+}
+
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+/* ========== 列表过渡动画 ========== */
+.list-enter-active,
+.list-leave-active {
+  transition: all var(--transition-base);
+}
+
+.list-enter-from {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.list-leave-to {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+/* Stagger 效果 */
+.list-move {
+  transition: transform var(--transition-base);
+}

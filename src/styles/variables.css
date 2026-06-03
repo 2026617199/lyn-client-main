@@ -1,0 +1,183 @@
+/**
+ * 主题变量系统
+ * 基于中医养生理念的色彩与设计系统
+ */
+
+:root {
+  /* ========== 色彩系统 ========== */
+  
+  /* 主色调 - 温润大地色系 */
+  --color-primary: #8B6F47;        /* 赭石色 - 主色 */
+  --color-primary-light: #A68A64;  /* 浅赭石 */
+  --color-primary-dark: #6B5437;   /* 深赭石 */
+  --color-primary-alpha: rgba(139, 111, 71, 0.1);
+  
+  /* 强调色 - 青绿健康色 */
+  --color-accent: #5A9F8F;         /* 青绿色 */
+  --color-accent-light: #7DBFAF;   /* 浅青绿 */
+  --color-accent-dark: #3D7F6F;    /* 深青绿 */
+  --color-accent-alpha: rgba(90, 159, 143, 0.1);
+  
+  /* 辅助色 - 茶色系 */
+  --color-secondary: #C4A57B;      /* 茶色 */
+  --color-secondary-light: #D9BF9F;
+  --color-secondary-dark: #9F8560;
+  
+  /* 中性色 - 米白与灰调 */
+  --color-bg-primary: #FAF8F5;     /* 米白色背景 */
+  --color-bg-secondary: #F5F2ED;   /* 次级背景 */
+  --color-bg-tertiary: #EFEAE2;    /* 三级背景 */
+  --color-bg-elevated: #FFFFFF;    /* 卡片背景 */
+  
+  /* 文字色 */
+  --color-text-primary: #2C2416;   /* 主文字 - 深棕 */
+  --color-text-secondary: #5C5346; /* 次级文字 */
+  --color-text-tertiary: #8C8376;  /* 三级文字 */
+  --color-text-inverse: #FFFFFF;   /* 反色文字 */
+  
+  /* 边框色 */
+  --color-border-light: #E5DFD4;
+  --color-border-medium: #D4CCBD;
+  --color-border-dark: #B8AE9F;
+  
+  /* 状态色 */
+  --color-success: #6B9F7F;        /* 成功 - 草绿 */
+  --color-warning: #D4A574;        /* 警告 - 姜黄 */
+  --color-error: #C97064;          /* 错误 - 赤红 */
+  --color-info: #7A9FBF;           /* 信息 - 青蓝 */
+  
+  /* 体质色彩映射 */
+  --color-constitution-balanced: #8B9F6F;      /* 平和质 - 和谐绿 */
+  --color-constitution-qi: #D4A574;            /* 气虚质 - 暖黄 */
+  --color-constitution-yang: #C97064;          /* 阳虚质 - 温红 */
+  --color-constitution-yin: #7A9FBF;           /* 阴虚质 - 凉蓝 */
+  --color-constitution-phlegm: #9F8F7F;        /* 痰湿质 - 浊褐 */
+  --color-constitution-damp: #A58F6F;          /* 湿热质 - 土黄 */
+  --color-constitution-blood: #8F6F7F;         /* 血瘀质 - 暗紫 */
+  --color-constitution-qi-stagnation: #7F8F9F; /* 气郁质 - 灰蓝 */
+  --color-constitution-special: #9F7F8F;       /* 特禀质 - 淡紫 */
+  
+  /* ========== 阴影系统 ========== */
+  --shadow-sm: 0 1px 2px rgba(44, 36, 22, 0.05);
+  --shadow-md: 0 4px 6px rgba(44, 36, 22, 0.07), 0 2px 4px rgba(44, 36, 22, 0.05);
+  --shadow-lg: 0 10px 15px rgba(44, 36, 22, 0.1), 0 4px 6px rgba(44, 36, 22, 0.05);
+  --shadow-xl: 0 20px 25px rgba(44, 36, 22, 0.1), 0 10px 10px rgba(44, 36, 22, 0.04);
+  --shadow-2xl: 0 25px 50px rgba(44, 36, 22, 0.15);
+  --shadow-inner: inset 0 2px 4px rgba(44, 36, 22, 0.06);
+  
+  /* ========== 间距系统 ========== */
+  --spacing-xs: 0.25rem;    /* 4px */
+  --spacing-sm: 0.5rem;     /* 8px */
+  --spacing-md: 1rem;       /* 16px */
+  --spacing-lg: 1.5rem;     /* 24px */
+  --spacing-xl: 2rem;       /* 32px */
+  --spacing-2xl: 3rem;      /* 48px */
+  --spacing-3xl: 4rem;      /* 64px */
+  --spacing-4xl: 6rem;      /* 96px */
+  
+  /* ========== 圆角系统 ========== */
+  --radius-sm: 0.25rem;     /* 4px */
+  --radius-md: 0.5rem;      /* 8px */
+  --radius-lg: 0.75rem;     /* 12px */
+  --radius-xl: 1rem;        /* 16px */
+  --radius-2xl: 1.5rem;     /* 24px */
+  --radius-full: 9999px;
+  
+  /* ========== 字体系统 ========== */
+  --font-sans: "LXGW WenKai", "霞鹜文楷", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-serif: "Noto Serif SC", "思源宋体", Georgia, serif;
+  --font-mono: "JetBrains Mono", "Fira Code", Consolas, monospace;
+  
+  /* 字体大小 */
+  --text-xs: 0.75rem;       /* 12px */
+  --text-sm: 0.875rem;      /* 14px */
+  --text-base: 1rem;        /* 16px */
+  --text-lg: 1.125rem;      /* 18px */
+  --text-xl: 1.25rem;       /* 20px */
+  --text-2xl: 1.5rem;       /* 24px */
+  --text-3xl: 1.875rem;     /* 30px */
+  --text-4xl: 2.25rem;      /* 36px */
+  --text-5xl: 3rem;         /* 48px */
+  --text-6xl: 3.75rem;      /* 60px */
+  
+  /* 字重 */
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  
+  /* 行高 */
+  --leading-tight: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.75;
+  --leading-loose: 2;
+  
+  /* ========== 过渡动画 ========== */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  
+  /* 缓动函数 */
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* ========== 布局 ========== */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-2xl: 1536px;
+  
+  --header-height: 64px;
+  --sidebar-width: 280px;
+  
+  /* ========== Z-index 层级 ========== */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+  
+  /* ========== 特效 ========== */
+  --blur-sm: 4px;
+  --blur-md: 8px;
+  --blur-lg: 16px;
+  --blur-xl: 24px;
+  
+  /* 渐变 */
+  --gradient-primary: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  --gradient-accent: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);
+  --gradient-warm: linear-gradient(135deg, #D4A574 0%, #C97064 100%);
+  --gradient-cool: linear-gradient(135deg, #7A9FBF 0%, #5A9F8F 100%);
+  --gradient-mesh: 
+    radial-gradient(at 0% 0%, rgba(139, 111, 71, 0.1) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(90, 159, 143, 0.1) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(196, 165, 123, 0.1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(122, 159, 191, 0.1) 0px, transparent 50%);
+}
+
+/* ========== 暗色主题（可选） ========== */
+[data-theme="dark"] {
+  --color-bg-primary: #1A1612;
+  --color-bg-secondary: #242018;
+  --color-bg-tertiary: #2E2820;
+  --color-bg-elevated: #332D25;
+  
+  --color-text-primary: #F5F2ED;
+  --color-text-secondary: #C4BCAF;
+  --color-text-tertiary: #9F9789;
+  
+  --color-border-light: #3D3630;
+  --color-border-medium: #4D453D;
+  --color-border-dark: #5D544A;
+  
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4), 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.5), 0 4px 6px rgba(0, 0, 0, 0.4);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.6), 0 10px 10px rgba(0, 0, 0, 0.5);
+}

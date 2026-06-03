@@ -1,0 +1,46 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["src/*"],
+            "@components/*": ["src/components/*"],
+            "@views/*": ["src/views/*"],
+            "@api/*": ["src/api/*"],
+            "@stores/*": ["src/stores/*"],
+            "@assets/*": ["src/assets/*"],
+            "@style/*": ["src/style/*"],
+            "@router/*": ["src/router/*"]
+        },
+        "module": "ESNext",
+        "target": "ES2020",
+        "lib": ["ES2020", "DOM", "DOM.Iterable"],
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "allowJs": true,
+        "strict": false,
+        "noEmit": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "skipLibCheck": true,
+        "types": ["vite/client"],
+        "jsx": "preserve"
+    },
+    "include": [
+        "src/**/*",
+        "src/**/*.vue",
+        "vite.config.js",
+        "*.js",
+        "*.ts",
+        "*.vue"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist",
+        "**/*.spec.js",
+        "**/*.test.js"
+    ],
+    "vueCompilerOptions": {
+        "target": 3
+    }
+}
